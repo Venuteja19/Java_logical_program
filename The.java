@@ -1,8 +1,8 @@
 import java.util.*;
 class In
 {
- Protected int a,b,c;
- base()
+ protected int a,b,c;
+ In()
 {
   a=10;
   b=20;
@@ -13,7 +13,6 @@ class In
   System.out.println("The Addition value is :"+c);
  }
 }
- {
    class Out extends In
   {
    int d;
@@ -23,16 +22,13 @@ class In
    System.out.println("The Multipication value is :"+d);
   }
  }
-}
-  {
     class The
  {
-  public static void mian(String []args)
+  public static void main(String args[])
 {
     Out a1=new Out();
     a1.add();
     a1.mul();
-  }
- } 
+  } 
 }
    
