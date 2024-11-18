@@ -1,12 +1,29 @@
-import java.util.*;
-class main
+class InvalidAgeException extends Exception
 {
- public static void main(String[] args)
+ public InvalidAgeException(String message)
 {
-  String st1="I'am VENU TEJA THANK YOU";
-  Stringtokenizer t=new Stringtokenizer(st1);
-  System.out.println("The number of tokens available in given String is :"+t.countToken());
-  while(t.hasmoreTokens)
- System.out.println(t.nextToken());
+  super(message);
+ }
 }
+ public class main
+{
+ public static void ValidAge(int age)throws InvalidAgeException
+{
+ if(age<18)
+{
+  throw new InvalidAgeException("Age must be above 18");
+  }
+  System.out.println("Acess granted");
+ }
+ public static void main(String args[])
+{
+ try
+{
+  ValidAge(17);
+ }
+  catch(InvalidAgeException e)
+{
+  System.out.println("Caught Exception :"+e.getmessage);
+  }
+ }
 }
